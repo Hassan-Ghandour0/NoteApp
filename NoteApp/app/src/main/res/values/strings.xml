@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="mynotes">Mynotes</string>
+
+    <string name="homepage_NoteMainTitle_TextView">Note</string>
+    <string name="homepage_EnterButton_ButtonText">Enter</string>
+
+    <string name="login_LoginTitle_ViewText">Login</string>
+    <string name="login_LoginEmailEditText_Hint">Email</string>
+    <string name="login_LoginErrorMessage_TextView">Email inexistant. Veuillez créer un nouveau compte.</string>
+    <string name="login_Login_ButtonText">Login</string>
+    <string name="login_AddAccount_ButtonText">Add new account</string>
+
+    <string name="signIn_AddAccount_ButtonText">Add account</string>
+    <string name="signIn_EmailInput_Hint">Email</string>
+    <string name="signIn_ErrorMessage_TextView">The email is already in use</string>
+    <string name="signIn_ConfirmButton_ButtonText">Confirm</string>
+
+    <string name="notelist_MyNote_TabTitle">My notes</string>
+    <string name="notelist_SharedToMe_TabTitle">Shared to me</string>
+    <string name="notelist_AddNoteButton_ButtonText">+</string>
+
+    <string name="noterv_CellNoteTitleExample_TextView">TitreExemple</string>
+    <string name="noterv_cellEmailExample_TextView">email@email.com</string>
+
+    <string name="newNote_TextInputEditText_Hint">Title</string>
+    <string name="newNote_BodyInputEditText_Hint">Body</string>
+    <string name="newNote_DecreaseSizeBodyText_ButtonText">A-</string>
+    <string name="newNote_IncreaseSizeBodyText_ButtonText">A+</string>
+    <string name="newNote_SaveButtonText_ButtonText">Save</string>
+
+</resources>

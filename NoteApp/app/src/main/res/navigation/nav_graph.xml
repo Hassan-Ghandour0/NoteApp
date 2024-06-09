@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomePage">
+    <fragment
+        android:id="@+id/HomePage"
+        android:name="com.example.noteapp.HomePage"
+        android:label="home_page"
+        tools:layout="@layout/home_page" >
+        <action
+            android:id="@+id/action_HomePage_to_login"
+            app:destination="@id/homepage_to_login_graph" />
+        <action
+            android:id="@+id/action_HomePage_to_noteList2"
+            app:destination="@id/noteList2" />
+    </fragment>
+    <fragment
+        android:id="@+id/noteList2"
+        android:name="com.example.noteapp.NoteList"
+        android:label="Notes"
+        tools:layout="@layout/note_list">
+        <action
+            android:id="@+id/action_noteList2_to_login_graph"
+            app:destination="@id/homepage_to_login_graph" />
+        <action
+            android:id="@+id/viewDetails"
+            app:destination="@id/newNote2" />
+    </fragment>
+    <navigation
+        android:id="@+id/homepage_to_login_graph"
+        app:startDestination="@id/Login">
+        <fragment
+            android:id="@+id/Login"
+            android:name="com.example.noteapp.Login"
+            android:label="login"
+            tools:layout="@layout/login">
+            <action
+                android:id="@+id/login_to_signIn"
+                app:destination="@id/Sign_in" />
+            <action
+                android:id="@+id/login_to_notelist"
+                app:destination="@id/noteList2" />
+        </fragment>
+        <fragment
+            android:id="@+id/Sign_in"
+            android:name="com.example.noteapp.SignIn"
+            android:label="sign_in"
+            tools:layout="@layout/sign_in">
+            <action
+                android:id="@+id/signin_to_notelist"
+                app:destination="@id/noteList2" />
+        </fragment>
+        <action
+            android:id="@+id/action_global_noteList2"
+            app:destination="@id/noteList2" />
+    </navigation>
+    <fragment
+        android:id="@+id/newNote2"
+        android:name="com.example.noteapp.NewNote"
+        android:label="new_note"
+        tools:layout="@layout/new_note" >
+        <argument
+            android:name="NOTE_ID"
+            app:argType="integer" />
+    </fragment>
+</navigation>

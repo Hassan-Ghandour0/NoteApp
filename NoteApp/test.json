@@ -1,0 +1,40 @@
+[
+  {
+    "UserEmail": "",
+    "NoteTitle": "",
+    "NoteBody": ""
+  }
+]
+
+// findAll
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "NoteBody": "BodyTest",
+        "NoteTitle": "titleTest",
+        "UserEmail": "alfred.couvreur@student.junia.com",
+        "createdAt": "2024-02-05T07:15:00.285Z",
+        "updatedAt": "2024-02-05T07:15:59.831Z",
+        "publishedAt": "2024-02-05T07:15:59.828Z"
+      }
+    }
+  ]
+}
+
+// findOne
+{
+  "data": {
+    "id": 1,
+    "attributes": {
+      "NoteBody": "BodyTest",
+      "NoteTitle": "titleTest",
+      "UserEmail": "alfred.couvreur@student.junia.com",
+      "createdAt": "2024-02-05T07:15:00.285Z",
+      "updatedAt": "2024-02-05T07:15:59.831Z",
+      "publishedAt": "2024-02-05T07:15:59.828Z"
+    }
+  },
+  "meta": {}
+}
